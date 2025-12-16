@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - BVCOE Women, Pune</title>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>BVCOE for Women</h2>
+                <p>Pune</p>
+            </div>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+             
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="hero-overlay">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>We're here to help and answer any questions you might have</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="college-name">
+                <h2>Bharati Vidyapeeth's College of Engineering For Women, Pune</h2>
+            </div>
+            
+            <div class="info-table">
+                <div class="info-row">
+                    <div class="info-label">Address:</div>
+                    <div class="info-value">Pune-Satara Road, Pune-411 043</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Phone:</div>
+                    <div class="info-value">
+                        <a href="tel:020-24371684">020-24371684</a>
+                    </div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Fax:</div>
+                    <div class="info-value">020-24372210</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Website:</div>
+                    <div class="info-value">
+                        <a href="http://coewpune.bharatividyapeeth.edu" target="_blank">http://coewpune.bharatividyapeeth.edu</a>
+                    </div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Email:</div>
+                    <div class="info-value">
+                        <a href="mailto:coewpune@bharatividyapeeth.edu">coewpune@bharatividyapeeth.edu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Details Grid -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h2>Send Us a Message</h2>
+                    <form onsubmit="handleSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="admission">Admission Enquiry</option>
+                                <option value="program">Program Information</option>
+                                <option value="placement">Placement Related</option>
+                                <option value="general">General Query</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Quick Contact Cards -->
+                <div class="contact-cards">
+                    <div class="contact-card">
+                        <div class="card-icon">📍</div>
+                        <h3>Visit Us</h3>
+                        <p>Pune-Satara Road<br>Pune - 411 043<br>Maharashtra, India</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="card-icon">📞</div>
+                        <h3>Call Us</h3>
+                        <p>Phone: 020-24371684<br>Fax: 020-24372210</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="card-icon">📧</div>
+                        <h3>Email Us</h3>
+                        <p>
+                            <a href="mailto:coewpune@bharatividyapeeth.edu">coewpune@bharatividyapeeth.edu</a>
+                        </p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="card-icon">🕒</div>
+                        <h3>Office Hours</h3>
+                        <p>Monday - Friday: 9:00 AM - 5:00 PM<br>Saturday: 9:00 AM - 1:00 PM<br>Sunday: Closed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Find Us on Map</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.0!2d73.8446!3d18.4574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDI3JzI2LjYiTiA3M8KwNTAnNDAuNiJF!5e0!3m2!1sen!2sin!4v1234567890"
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p>Pune-Satara Road<br>Pune - 411 043, Maharashtra</p>
+                    <p>Email: coewpune@bharatividyapeeth.edu</p>
+                    <p>Phone: 020-24371684</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                       
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bharati Vidyapeeth's College of Engineering for Women. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
